@@ -4,6 +4,7 @@
 			D=D+A
 			@16
 			M=D
-			@END
+			
 (END)
+            @END
 			0;JMP
