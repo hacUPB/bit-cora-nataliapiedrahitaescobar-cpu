@@ -50,4 +50,8 @@ El valor que se guarda en la dirección de memoria 16 es el 3 porque el programa
    - Fetch: El procesador busca @END.
    - Decode: El computador entiende que es una dirección de salto.
    - Execute: A = END.
-
+  
+**¿Qué cambios observas en el contenido de la memoria y los registros?**
+El registro A cambia según cada instrucción: A = 1,2,16,END.
+El registro D primero toma el 1 y luego guarda el resultado de la suma: D = 0,1,3.
+La memoria RAM solo cambia una posición de la memoria: RAM[16] = 3.
