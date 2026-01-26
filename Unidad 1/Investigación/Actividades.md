@@ -35,8 +35,19 @@ El valor que se guarda en la dirección de memoria 16 es el 3 porque el programa
    - Decode: Se carga el valor 2 en el registro A.
    - Execute: A = 2.
 4. D = D + A
-   - Fetch: El procesador busca D + A
-   - Decode: El computador suma D + A (1 + 2)
-   - Execute: D = 3
+   - Fetch: El procesador busca D + A.
+   - Decode: El computador suma D + A (1 + 2).
+   - Execute: D = 3.
 5. @16
-   -Fetch: El procesador busca la instrucción @ 16
+   - Fetch: El procesador busca la instrucción @ 16.
+   - Decode: Se carga el valor de 16 en el registro A.
+   - Execute A = 16.
+6. M = D
+   - Fetch:  El procesador busca M = D.
+   - Decode: Se guarda D en la memoria.
+   - Execute: RAM[16] = 3.
+7. @END
+   - Fetch: El procesador busca @END.
+   - Decode: El computador entiende que es una dirección de salto.
+   - Execute: A = END.
+
