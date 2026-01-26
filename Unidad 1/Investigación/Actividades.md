@@ -12,3 +12,7 @@ Se realizaron los ejercicios de Fetch-Decode-Execute
 
 
  Yay! c:
+
+## Actividad 2 
+ 
+**¿Qué sucede?**
