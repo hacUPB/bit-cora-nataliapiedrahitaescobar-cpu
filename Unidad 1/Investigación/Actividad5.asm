@@ -17,8 +17,17 @@ D=M // Guarda el valor que haya en la casilla D
 D=D-A // Se resta el valor del contador - 5 y aparecen los condicionales 
 @END_LOOP
 D;JGT// Si el resultado de la resta es mayor que 0 el ciclo se termina.
-
-@16
-D=M
-@17
-M=D+M
+@16 // Se selecciona la memoria 16 donde se guarda el contador 
+D=M // Se copia el valor de la que está en la memoria D
+@17 // Se selecciona la dirección de memoria 17 donde se guarda los valores de la suma.
+M=D+M //Instrucción que hace el cálculo
+@16 // El programa selecciona la casilla donde esta i 
+M=M+1 // i+1
+@LOOP 
+0;JMP // El código vuelve a empezar la comprobación del condicional
+(END LOOP)
+@17 // El programa selecciona la casilla 17, o sea donde está la suma total de los datos
+D=M // Al sumar ñas 5 vueltas da 15 y aquí la CPU copia ese valor y lo guarda en D
+@12 // El progtama selecciona la casilla de memoria 12
+M=D // Se copia el valor de que está en D (15) y se guarda en la casilla RAM[12]
+0;JMP 
