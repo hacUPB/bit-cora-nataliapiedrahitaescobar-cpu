@@ -117,3 +117,5 @@ Actividad usando el valor 13
 Código funcional
 
 ![alt text](image-9.png)
+
+## Actividad 6
