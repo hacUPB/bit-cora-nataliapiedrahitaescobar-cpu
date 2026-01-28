@@ -61,3 +61,37 @@ La memoria RAM solo cambia una posición de la memoria: RAM[16] = 3.
 ![alt text](imagen.png)
 
 
+## Actividad 3
+
+@SCREEN
+
+D=A
+
+@I
+
+M=D
+
+Predicción: Se busca la instrucción @SCREEN/16384, la dirección de pantalla se guarda en A y luego se copia en D, se asigna la dirección RAM  en i/16 y se copia esa dirección en A.
+
+![alt text](image-2.png)
+
+(READKEYBOARD)
+
+@KBD
+
+D=M
+
+@KEYPRESSED
+
+D;JNE
+
+@i
+
+D=M
+
+Predicción: Se activa y se busca la instrucción de teclado @KBD la cual se guarda en A y como D=A entonces este dato se termina guardando en la memoria RAM, luego se activa la instrucción de activación del teclado y aparece el condicional de si el valor de de D=M es distinto de cero entonces la el dato que termina siendo @i se guarda en la memoria RAM[17]
+
+![alt text](image-3.png)
+
+**Corrección**: El programa lee el valor del teclado usando @KBD y D=M. Si el valor es distinto de cero, el programa salta a la etiqueda @KEYPRESSED (@20). Si no hay tecla presionada, el sistema continúa y carga el valor almacenado en la variable i en el registro D.
+
