@@ -95,3 +95,19 @@ Predicción: Se activa y se busca la instrucción de teclado @KBD la cual se gua
 
 **Corrección**: El programa lee el valor del teclado usando @KBD y D=M. Si el valor es distinto de cero, el programa salta a la etiqueda @KEYPRESSED (@20). Si no hay tecla presionada, el sistema continúa y carga el valor almacenado en la variable i en el registro D.
 
+## Actividad 4
+![alt text](image-4.png) 
+Imagen primer error
+
+Error en condicional D;JLT
+![alt text](image-5.png)
+
+![alt text](image-6.png)
+
+Actividaad 4 corregida y funcional con el valor 6
+
+![alt text](image-7.png)
+
+Actividad usando el valor 13
+
+![alt text](image-8.png)
