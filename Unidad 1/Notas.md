@@ -56,5 +56,5 @@ Con etiquetas o salto: Esto hace que el programa se repita infinitamente
 
 ## **¿Qué es la ALU y qué operaciones realiza?**
 
-ALU = Unidad arimético-lógica, realiza operaciones como suma y resta, operaciones lógicas y comparaciones.
+ALU = Unidad aritmético-lógica, realiza operaciones como suma y resta, operaciones lógicas y comparaciones.
 

@@ -113,3 +113,7 @@ Actividad usando el valor 13
 ![alt text](image-8.png)
 
 ## Actividad 5 
+
+Código funcional
+
+![alt text](image-9.png)
