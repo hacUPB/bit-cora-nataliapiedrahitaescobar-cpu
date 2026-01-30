@@ -45,3 +45,21 @@
 - El proceso del ejercicio está explicado de forma sencilla y facil de comprender.
 
 - En este ejercicio también explica las dificultades que tuvo el compañero a realizar el ejercicio y cómo pudo comprenderlas.
+
+### Actividad 6
+
+**Fortalezas**
+
+- Se respondieron todas las preguntas planteadas en el ejercicio 6.
+
+- El compañero da una explicación clara y ordenada de los conceptos básicos del computador Hack.
+
+- Utiliza ejemplos concretos para explicar las instrucciones del computador ensamblador.
+
+- El lenguaje es sencillo y fácil de comprender.
+
+- Se nota que el compañero entiende muy bien el flujo de ejecución de uncomputador Hack y el uso de ciclos y condicionales.
+
+**Debilidades**
+
+- Se podrían integrar ejemplos un poco más desarrollados.
