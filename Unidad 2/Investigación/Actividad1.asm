@@ -1,4 +1,4 @@
-//scribe un programa que dibuje un punto negro en la esquina superior izquierda de la pantalla.
+//Escribe un programa que dibuje un punto negro en la esquina superior izquierda de la pantalla.
 
 //Programa ensamblador
 @16384 //Se carga la dirección de memoria 16384 en el registro A (SCREEN)
