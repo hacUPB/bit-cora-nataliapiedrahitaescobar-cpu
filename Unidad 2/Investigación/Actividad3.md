@@ -8,4 +8,6 @@ Errores:
 - En HACK todo acceso a la memoria es @dirección + M
 - Los saltos deben ir después de las comparaciones.
 
+<img width="1919" height="944" alt="image" src="https://github.com/user-attachments/assets/e812f801-efcb-43f2-b19d-d2979340bec4" />
+Imagen demostración corregida con movimiento a la derecha.
 
