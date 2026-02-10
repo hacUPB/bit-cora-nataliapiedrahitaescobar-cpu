@@ -29,3 +29,26 @@ int *p;
 p = &a;
 b = p*
 
+//Guardar el valor a
+@10
+D=A 
+@a //Posición RAM
+M=D 
+//Guardar el valor de b
+@5
+D=A 
+@b //Posición RAM
+M=D 
+//Crear puntero
+@a 
+D=A 
+@p //Posición RAM
+M=D 
+//Desreferenciar el puntero
+@p 
+A=M
+D=M
+@b 
+M=D 
+
+
