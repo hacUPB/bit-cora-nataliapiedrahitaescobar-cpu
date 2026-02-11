@@ -8,12 +8,12 @@ p = &a;
 //Guardar el valor de 10
 @10
 D=A 
-@x
+@x //Posición RAM
 M=D
 //Crear el puntero
 @x
 D=A 
-@p
+@p //Posición RAM
 M=D
 //Apuntar a donde apunta el puntero
 @10
