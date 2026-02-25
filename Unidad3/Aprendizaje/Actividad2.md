@@ -8,7 +8,7 @@ void modificarPorValor(int n) {
 ```
 n = a = 10
 1. Se crea una copia del valor inicial de n y a este se le suma 5, lo cual da 15.
-2. La variable 15 se guarda en otra memoria diferente porque es una copia y la variable inicial 10 queda igual al final (n=10).
+2. La variable 15 se guarda en otra dirección de memoria diferente porque es una copia y la variable inicial 10 queda igual al fina (n=10).
 
 ```
 void modificarPorReferencia(int &n) {    
