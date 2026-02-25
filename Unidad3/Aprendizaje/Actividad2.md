@@ -1,4 +1,4 @@
-## **¿Qué sucede en paso por valor?
+## **¿Qué sucede en paso por valor? (Predicción)** 
 ```
 void modificarPorValor(int n) {    
 	cout << "Dentro de modificarPorValor, valor inicial: " << n << endl;    
