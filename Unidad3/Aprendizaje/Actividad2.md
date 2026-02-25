@@ -31,6 +31,6 @@ void modificarPorPuntero(int* n) {
 ```
 n = c = 10
 1. Se recibe la variable inicial n=10.
-2. Se crea un puntero * para poder acceder a la información de la variable inicial.
+2. Se crea un puntero * para poder acceder a la información de la dirección de memoria de la variable inicial.
 3. Se hace la suma de n+15.
 4. El resultado final es n=15 porque se realizó la suma en el lugar donde se guardaba la información de la variable incial.
