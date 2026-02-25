@@ -18,5 +18,5 @@ int main() {
     }
  ```
 
- **¿Qué pasa cuando hay un cambio al modificar el segmento de texto?**
+ **¿Qué pasa?**
  ![alt text](image.png)
