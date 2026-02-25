@@ -1,4 +1,4 @@
-```
+
 #include <iostream>
 #include <cstdlib>
 using namespace std;
@@ -16,7 +16,7 @@ int main() {
     /********************************************************/
     return 0;
     }
-     ```
+
 
  **¿Qué pasa?**
  ![alt text](image.png)
