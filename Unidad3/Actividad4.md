@@ -18,7 +18,6 @@ int main() {
     }
 
 
- **¿Qué pasa?**
 +--------------------------------+
 |TEXT:                           |
 |int main                        |
@@ -37,4 +36,6 @@ int main() {
 |return 0                        |
 +--------------------------------+
  ![alt text](image.png)
- 
+
+  **¿Qué pasa?**
+  El error aparece porque el puntero void*ptr quiere modificar el segmento de código TEXT, que es donde se almacenan las intrucciones del programa. Como esta zona de memoria es solo de lectura, el sistema operativo impide que se haga alguna modificación y por eso se genera el error.
