@@ -6,8 +6,16 @@ Segmento protegido como solo lectura, no se puede ecribir en la zona de memoria 
 2. **Data:**
 Variables globales y estáticas.
 3. **Heap:** 
-Va todo lo que va reservado manualmente en el código, algo creado con new.
+Va todo lo que va reservado manualmente en el código, algo creado con new o mallock.
 Si se puede modificar.
 4. **Stack:**
 Van las variables locales, parámetros de funciones y direcciiones de retorno.
 Si se puede modificar.
+
+**MAIN:** 
+Es donde están guardadas las instrucciones ejecutables de un programa.
+
+**Punteros:**
+Guarda la dirección de memoria donde está un valor, pero no guarda el valor directamente.
+&x = dar la dirección de x en la memoria.
+Un puntero es una variable que almacena la dirección de memoria de otra variable, permitiendo acceder o modificar su contenido de forma indirecta.
