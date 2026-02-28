@@ -19,3 +19,9 @@ Es donde están guardadas las instrucciones ejecutables de un programa.
 Guarda la dirección de memoria donde está un valor, pero no guarda el valor directamente.
 &x = dar la dirección de x en la memoria.
 Un puntero es una variable que almacena la dirección de memoria de otra variable, permitiendo acceder o modificar su contenido de forma indirecta.
+
+**Depurar:**
+Es ejecutar un programa paso a paso para ver qué está pasando en la memoria, dónde ocurre el error y qué línea lo provoca.
+
+**Breakpoint:**
+Detener el programa en una parte determinada antes de ejecutar una línea.
