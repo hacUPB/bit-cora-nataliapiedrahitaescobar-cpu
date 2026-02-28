@@ -144,3 +144,28 @@ Datod finales de las variables global_inicializada y global_no_inicializada:
 
 ### **¿Qué ocurre?**
 En este experimento no aparece un error y el programa funciona correctamente porque las variables global_inicializada y global_no_inicializada hacen parte de la memoria DATA que puede ser modificada y también permiten la operación de lectura. Por eso en el código las variables pasan de ser 42 a 69 y 0 a 666 sin ningún tipo de error.
+
+### **EXPERIMENTO 4**
+
+```
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+// Función de ejemplo que muestra la dirección de su variable local estática
+void funcionConStatic() {    
+		static int var_estatica = 100;    
+		cout << "Dirección de var_estatica (static): " << &var_estatica << endl;
+}
+
+int main() {    // Variable local (stack)    
+		int a = 10;    
+		int b = 20;
+    /**********************************************************        
+    EXPERIMENTO 4    
+    ***********************************************************/
+    var_estatica = 42;
+    cout << "var_estatica: " << var_estatica << endl;
+    /********************************************************/    
+    return 0;
+    }
+```
