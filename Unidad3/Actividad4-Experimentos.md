@@ -251,3 +251,6 @@ int main() {    // Variable local (stack)
 |return 0                        |
 +--------------------------------+
 
+### **¿Qué ocurre? ¿Por qué?**
+### **Ves alguna diferencia entre las variables locales estáticas y no estáticas?**
+### **¿Qué pasa con las variables cada que entras y sales de la función?**
