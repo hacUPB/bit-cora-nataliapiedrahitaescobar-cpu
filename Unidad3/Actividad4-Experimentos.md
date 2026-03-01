@@ -193,7 +193,7 @@ int main() {    // Variable local (stack)
 Antes de intentar depurar el código aparece un error en var_estatica = 42 porque esta variable fue creada en otra función (funcionConStatic) lo que la hace una variable local que no existe dentro del main y que solo funciona dentro de la función que fue creada.
 ### **¿Qué pasa con las variables cada que entras y sales de la función?**
 Cuando se entra a la funcionConStatic, la variable local var_estatica se almacena en la memoria estática y cuando se sale de la función la variable se borra de la memoria.
-### ** ¿Qué pasa con las variables locales estáticas?**
+### **Qué pasa con las variables locales estáticas?**
 Una variable local estática es una variable que se encuentra dentro de una función, pero no se borra cuando la función termina sino que guarda su valor en la memoria para la próxima vez que se utilice el código.
 
 ### **EXPERIMENTO 5**
