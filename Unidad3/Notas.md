@@ -25,3 +25,6 @@ Es ejecutar un programa paso a paso para ver qué está pasando en la memoria, d
 
 **Breakpoint:**
 Detener el programa en una parte determinada antes de ejecutar una línea.
+
+**Variables locales estáticas:**
+Variable que se encuentra dentro de una función pero que no se borra de la mememoria cuando la función termina.

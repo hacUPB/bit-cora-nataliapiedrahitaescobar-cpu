@@ -169,5 +169,85 @@ int main() {    // Variable local (stack)
     return 0;
     }
 ```
+
++--------------------------------+
+|TEXT:                           |
+|int main                        |
++--------------------------------+
+|DATA:                           |
+|funcionConStatic                |
+|var_estatica                    |
++--------------------------------+
+|HEAP:                           |
+|No hay                          |
++--------------------------------+
+|STACK:                          |
+|a = 10                          |
+|b = 20                          |
+|return 0                        |
++--------------------------------+
+
+![alt text](image-5.png)
+
 ### **¿Qué ocurre y por qué?**
+Antes de intentar depurar el código aparece un error en var_estatica = 42 porque esta variable fue creada en otra función (funcionConStatic) lo que la hace una variable local que no existe dentro del main y que solo funciona dentro de la función que fue creada.
+### **¿Qué pasa con las variables cada que entras y sales de la función?**
+Cuando se entra a la funcionConStatic, la variable local var_estatica se almacena en la memoria estática y cuando se sale de la función la variable se borra de la memoria.
+### ** ¿Qué pasa con las variables locales estáticas?**
+Una variable local estática es una variable que se encuentra dentro de una función, pero no se borra cuando la función termina sino que guarda su valor en la memoria para la próxima vez que se utilice el código.
+
+### **EXPERIMENTO 5**
+
+```
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+// Función de ejemplo que muestra la dirección de su variable local estática
+void funcionConStatic() {    
+		static int var_estatica = 100;    
+		cout << "var_estatica: " << var_estatica << endl;    
+		var_estatica++;
+}
+		
+void funcionSinStatic() {    
+		int var_no_estatica = 100;    
+		cout << "var_no_estatica: " << var_no_estatica << endl;    
+		var_no_estatica++;
+}
+
+int main() {    // Variable local (stack)    
+		int a = 10;    
+		int b = 20;
+    /**********************************************************        
+    EXPERIMENTO 5    
+    ***********************************************************/
+    for (int i = 0; i < 5; i++) {        
+		    cout << "Iteración " << i << endl;        
+		    funcionSinStatic();        
+		    funcionConStatic();    
+		}
+    /********************************************************/
+    return 0;
+    }
+```
++--------------------------------+
+|TEXT:                           |
+|int main                        |
++--------------------------------+
+|DATA:                           |
+|funcionConStatic                |
+|funcionSinStatic                |
+|var_estatica                    |
+|var_no_estatica                 |
++--------------------------------+
+|HEAP:                           |
+|No hay                          |
++--------------------------------+
+|STACK:                          |
+|a = 10                          |
+|b = 20                          |
+|i                               |
+|for                             |
+|return 0                        |
++--------------------------------+
 
