@@ -1,4 +1,4 @@
-### *EXPERIMENTO 1**
+### **EXPERIMENTO 1**
 
 #include <iostream>
 #include <cstdlib>
