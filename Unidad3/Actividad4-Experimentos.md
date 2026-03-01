@@ -291,20 +291,28 @@ int main() {    // Tamaño del arreglo dinámico
 +--------------------------------+
 |TEXT:                           |
 |int main                        |
+|int* arrayHeap = new int[tam]   |
 +--------------------------------+
 |DATA:                           |
-|funcionConStatic                |
-|var_estatica                    |
-|var_no_estatica                 |
-+--------------------------------+
-|HEAP:                           |
 |No hay                          |
 +--------------------------------+
-|STACK:                          |
-|a = 10                          |
-|b = 20                          |
-|i                               |
-|for                             |
-|funcionSinStatic                |
-|return 0                        |
+|HEAP:                           |
+|new int [tam]                   |
 +--------------------------------+
+|STACK:                          |
+|tam = 5                         |
+|arrayHeap                       |
++--------------------------------+
+
+![alt text](image-8.png)
+
+### **¿Qué ocurre? ¿Por qué?**
+Aparece un error después de la línea de delete[] arrayHeap porque el delete se encarga de liberar el espacio de memoria que se reservó en el Heap cuando se hizo el for. Como cout << arrayHeap[0] << endl quiere ingresar a los datos de esa memoria aparece el error porque en la memoria Heap ya que no hay nada almacenado.
+### **¿Qué diferencias notas entre el comportamiento y la gestión del Heap en comparación con el Stack?**
+La memoria Stack maneja la memoria de forma automática porque las variables se crean cuando están dentro de una función y se eliminan cuando salen de ella. Mientras que en el Heap se necesita reservar el espacio de memoria usando new y se elimina usando delete.
+### **¿Qué consecuencias tendría no liberar la memoria reservada con new?**
+La memoria sigue ocupando espacio en el Heap aunque ya no se esté utilizando y eso puede hacer que se consuma memoria innecesaria que puede traer errores en el programa.
+### **¿Por qué es importante usar delete[] al liberar memoria asignada para un arreglo?**
+Porque es la forma correcta de liberar la memoria que se utilizo al crear el new y si no se utiliza correctamente, se podrían generar errores en el programa al no ser liberada la memoria del Heap correctamente.
+
+
