@@ -1,10 +1,10 @@
 ### **EXPERIMENTO 1**
 
+```
 #include <iostream>
 #include <cstdlib>
 using namespace std;
 
-```
 int main() {    
 		// Variable local (stack)    
 		int a = 10;    
