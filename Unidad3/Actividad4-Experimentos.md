@@ -139,7 +139,7 @@ int main() {    // Variable local (stack)
 ![alt text](image-2.png)
 Datos iniciales de las variables global_inicializada y global_no_inicializada:
 ![alt text](image-3.png)
-Datod finales de las variables global_inicializada y global_no_inicializada:
+Datos finales de las variables global_inicializada y global_no_inicializada:
 ![alt text](image-4.png)
 
 ### **¿Qué ocurre?**
