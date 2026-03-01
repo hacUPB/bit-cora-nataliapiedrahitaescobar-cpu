@@ -28,3 +28,6 @@ Detener el programa en una parte determinada antes de ejecutar una línea.
 
 **Variables locales estáticas:**
 Variable que se encuentra dentro de una función pero que no se borra de la mememoria cuando la función termina.
+
+**For:** 
+Inicio-condición-cambio.

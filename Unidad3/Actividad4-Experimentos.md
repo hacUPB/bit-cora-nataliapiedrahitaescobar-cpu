@@ -236,7 +236,6 @@ int main() {    // Variable local (stack)
 +--------------------------------+
 |DATA:                           |
 |funcionConStatic                |
-|funcionSinStatic                |
 |var_estatica                    |
 |var_no_estatica                 |
 +--------------------------------+
@@ -248,9 +247,17 @@ int main() {    // Variable local (stack)
 |b = 20                          |
 |i                               |
 |for                             |
+
+|funcionSinStatic
 |return 0                        |
 +--------------------------------+
 
+![alt text](image-6.png)
+![alt text](image-7.png)
+
 ### **¿Qué ocurre? ¿Por qué?**
+Al depurar el código, lo que sucede es que la funcionSinStatic imprime el valor de 100 en cada ciclo mientras que la funcionConStatic muestra los valores que van aumenatando de a uno según eñ contador de 100 a 104.
 ### **Ves alguna diferencia entre las variables locales estáticas y no estáticas?**
+La diferencia es que las variables locales estáticas y no estáticas es que las variables estáticas se crean una sola vez en la función y conservan su valor independientemente si se sale de la función o no, mientras que las locales no estáticas no guardan su valor al salir de la función sino que se eliminan.
 ### **¿Qué pasa con las variables cada que entras y sales de la función?**
+Cada que se entra a la función, las variables locales no estáticas se crean y al salir de la función se eliminan de la memoria Stack, mientras que las variables estáticas no se eliminan al salir de la función, sino que permanecen en la memoria Data y conservan su valor para poder ser cambiado cuando se vuelva a llamar la función.
