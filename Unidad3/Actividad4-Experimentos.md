@@ -169,3 +169,5 @@ int main() {    // Variable local (stack)
     return 0;
     }
 ```
+### **¿Qué ocurre y por qué?**
+
