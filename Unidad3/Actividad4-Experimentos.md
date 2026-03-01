@@ -247,10 +247,10 @@ int main() {    // Variable local (stack)
 |b = 20                          |
 |i                               |
 |for                             |
-
-|funcionSinStatic
+|funcionSinStatic                |
 |return 0                        |
 +--------------------------------+
+
 
 ![alt text](image-6.png)
 ![alt text](image-7.png)
@@ -261,3 +261,50 @@ Al depurar el código, lo que sucede es que la funcionSinStatic imprime el valor
 La diferencia es que las variables locales estáticas y no estáticas es que las variables estáticas se crean una sola vez en la función y conservan su valor independientemente si se sale de la función o no, mientras que las locales no estáticas no guardan su valor al salir de la función sino que se eliminan.
 ### **¿Qué pasa con las variables cada que entras y sales de la función?**
 Cada que se entra a la función, las variables locales no estáticas se crean y al salir de la función se eliminan de la memoria Stack, mientras que las variables estáticas no se eliminan al salir de la función, sino que permanecen en la memoria Data y conservan su valor para poder ser cambiado cuando se vuelva a llamar la función.
+
+### **EXPERIMENTO 6**
+
+```
+#include <iostream>
+using namespace std;
+int main() {    // Tamaño del arreglo dinámico    
+		int tam = 5;
+    // Asignar memoria en el Heap para un arreglo de enteros    
+    int* arrayHeap = new int[tam];
+    // Inicializar y mostrar los valores y direcciones de memoria    
+    for (int i = 0; i < tam; i++) {        
+		    arrayHeap[i] = (i + 1) * 10;        
+		    cout << "arrayHeap[" << i << "] = " << arrayHeap[i] << " en dirección " << (arrayHeap + i) << endl;    
+		    }
+    // Liberar la memoria asignada en el Heap    
+    delete[] arrayHeap;
+    /**********************************************************        
+    EXPERIMENTO 6    
+    ***********************************************************/
+    cout << arrayHeap[0] << endl;
+
+    /********************************************************/
+    return 0;
+    }
+```
+
++--------------------------------+
+|TEXT:                           |
+|int main                        |
++--------------------------------+
+|DATA:                           |
+|funcionConStatic                |
+|var_estatica                    |
+|var_no_estatica                 |
++--------------------------------+
+|HEAP:                           |
+|No hay                          |
++--------------------------------+
+|STACK:                          |
+|a = 10                          |
+|b = 20                          |
+|i                               |
+|for                             |
+|funcionSinStatic                |
+|return 0                        |
++--------------------------------+
