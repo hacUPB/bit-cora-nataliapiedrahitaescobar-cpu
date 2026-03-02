@@ -31,3 +31,16 @@ Variable que se encuentra dentro de una función pero que no se borra de la meme
 
 **For:** 
 Inicio-condición-cambio.
+
+**Destructor:**
+Es una función que se encarga de liberar espacio o limpiar la memoria que un objeto estaba usando cuando ya no se necesita.
+Ayuda a:
+1. Liberar memoria que fue reservada con new.
+2. Cerrar archivos.
+3. Eliminar datos que ya no se van a usar.
+4. Evitar que el programa consuma memoria innecesaria.
+
+Cuando se ejecuta:
+1. Cuando se termina una función.
+2. Cuando el programa finaliza.
+3. Cuando se elimina un objeto.  
