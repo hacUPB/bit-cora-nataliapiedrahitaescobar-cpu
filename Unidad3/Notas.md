@@ -9,7 +9,7 @@ Variables globales y estáticas.
 Va todo lo que va reservado manualmente en el código, algo creado con new o mallock.
 Si se puede modificar.
 4. **Stack:**
-Van las variables locales, parámetros de funciones y direcciiones de retorno.
+Van las variables locales, parámetros de  funciones y direcciiones de retorno.
 Si se puede modificar.
 
 **MAIN:** 
