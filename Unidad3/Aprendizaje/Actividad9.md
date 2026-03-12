@@ -59,4 +59,5 @@ La ventaja de los miembros estáticos es que permiten llevar información genera
 **En el programa, en qué segmento de memoria se están almacenando c1, c2, c3 y Contador::total?**
 - c1 y c2 se encuentran en la memoria Stack porque ambos objetos fueron creados dentro de la función Main. (Variables locales)
 - Contador::Total se encuentra en la memoria de los datos estáticos/globales porque es un static y solo hay una copia del contador en todo el programa.
+
 - c3 es un puntero que se considera como una variable local en el main, por lo que se encuentra en el stack
