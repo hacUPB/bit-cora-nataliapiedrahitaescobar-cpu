@@ -30,4 +30,4 @@ Esta parte del código quiere decir que el círculo puede usar los atributos y m
 
 **Un objeto de tipo Circulo, además de Radio, ¿Qué otros datos almacena en su interior gracias a la herencia?**
 
-Almacena los datos del atributo Nombre y el atributo dibujar 
+Almacena además del Radio, el nombre que hereda de la clase figura, lo que permite que el código pueda identificar como a una figura la clase círculo y tanbién hereda el método Dibujar().
