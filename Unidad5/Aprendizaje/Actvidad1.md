@@ -24,3 +24,8 @@ Digamos que hay una clase llamada Animal, que tiene como características nombre
 
 ### **3. ¿Qué es el polimorfismo? Describe con tus palabras qué significa que un código sea “polimórfico”.**
 
+Es lo que permite que un mismo método o acción pueda comportarse de diferentes maneras dependiendo del objeto que lo utilice.
+
+Se sabe que un código es polimórfico cuando un mismo método tiene distintos comportamientos según el tipo de objeto. 
+Ejemplo:
+Está la clase Animal que tiene como método hacerSonido() y luego tengo dos clases aparte Perro y Gato donde el Perro ladra y el gato maulla lo que hace que ambos tengan el mismo método de hacerSonido() pero el sonido que hace cada uno es diferente.
