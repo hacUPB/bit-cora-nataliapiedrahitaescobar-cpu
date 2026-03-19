@@ -31,3 +31,8 @@ Esta parte del código quiere decir que el círculo puede usar los atributos y m
 **Un objeto de tipo Circulo, además de Radio, ¿Qué otros datos almacena en su interior gracias a la herencia?**
 
 Almacena además del Radio, el nombre que hereda de la clase figura, lo que permite que el código pueda identificar como a una figura la clase círculo y tanbién hereda el método Dibujar().
+
+### **Polimorfismo:**
+**Observa el bucle foreach. La variable fig es de tipo Figura, pero a veces contiene un Circulo y otras un Rectangulo. Cuando se llama a fig.Dibujar(), el programa ejecuta la versión correcta. En tu opinión, ¿Cómo crees que funciona esto “por debajo”? No necesitas saber la respuesta correcta, solo quiero que intentes razonar cómo podría ser.**
+
+El foreach se encarga de recorrer todas las figuras de la lista para dibujarlas, aunque fig es de tipo figura, puede ser un círculo o un rectángulo. Creo que el programa detecta "por debajo" qué tipo de objeto es realmente (círculo o rectángulo) y ejecuta el método de dibujar() correcto gracias al polimorfismo.

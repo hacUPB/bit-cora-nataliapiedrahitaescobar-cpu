@@ -30,3 +30,5 @@ La clase perro tiene como métodos:
 - Comer()
 
 En el ejercicio 1, Nombre es public para permitir que otras clases puedan leer o modificar el valor de forma controlada por medio de get, set.
+
+ForEach: Es un ciclo que recorre todos los elementos de una colección uno por uno. Sirve cuando se quieren recorrer elementos.
