@@ -39,3 +39,8 @@ ofApp.cpp = Es donde se escribe el comportamiento de la aplicación en OpenFrame
 - Es donde se escribe la lógica real del programa.
 - Controla lo que pasa en pantalla.
 - Hacer las interacciones (Teclaso, mouse, etc).
+
+main.cpp: Es el archivo donde se inicia la ejecución del programa.
+- Inicia el programa.
+- Crea la ventana.
+- Ejecuta la aplicación. (ofApp)
