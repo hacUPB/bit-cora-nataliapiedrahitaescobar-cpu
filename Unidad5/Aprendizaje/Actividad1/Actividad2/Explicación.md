@@ -1,6 +1,6 @@
 ### **ofApp.h**
 
-En el código las partículas aparecen desde la parte de abajo la ventana, se pueden mover y luego explotan de diferentes maneras.
+En el código las partículas aparecen desde la parte de abajo de la ventana, se pueden mover y luego explotan de diferentes maneras.
 
 1. Se crea una  clase abstracta Partícula, que funciona como plantilla general.
 Esta clase tiene las funciones:
