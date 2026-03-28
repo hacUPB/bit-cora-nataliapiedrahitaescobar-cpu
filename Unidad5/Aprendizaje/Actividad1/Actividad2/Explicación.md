@@ -22,4 +22,13 @@ No dibuja nada por sí sola la clase, pero si controla cómo viven, se mueven y 
 ![alt text](image-3.png)
 
 4. Los tipos de explosiones:
-- 
+- CircularExplosion: La partícula explota formando círculos
+![alt text](image-4.png)
+
+- RandomExplosion: Aparecen varias partículas a la vez que al explotar crean diferentes formas aleatorias.
+También hay una forma de random explosion donde al explotar la partícula aparecen cuadrados.
+![alt text](image-5.png)
+![alt text](image-7.png)
+
+- StarExplosion: La partícula explota formando estrellas.
+![alt text](image-6.png)
