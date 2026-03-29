@@ -27,4 +27,7 @@ En una de las capturas, cuando solo se creó una sola partícula, el tamaño del
 
 2. El depurador ayuda a mostrar cuántas partículas hay, sus direcciones en memoria y el tipo real del objeto que hay cuando sucede el CircularExplosion.
 
-3.
+3. Se puede concluir que aunque el vector guarde las particulas como punteros, en realidad son objetos como el CircularExplosion. O sea que,aunque el programa guarda los objetos de distintos tipos como si fueran iguales, en realidad son diferenrtes y el programa sabe cuál es cuál.
+
+### **Métodos Virtuales**
+
