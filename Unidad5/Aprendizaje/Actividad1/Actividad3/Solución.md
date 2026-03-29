@@ -51,6 +51,45 @@ Puedo observar que _vtable contiene las direcciones de memoria que representan a
 3. La relación de los _vtable con los métodos virtuales es que los _vtable existen gracias a los métodos virtuales. Es lo que permite que el programa sepa qué función utilizar dependiento del tipo de objeto.
 
 
+
+**Código**
+```
+using System;
+interface IAnimal{    
+		void HacerSonido();
+		}
+class Perro : IAnimal{    
+		public void HacerSonido()    {        
+				Console.WriteLine("El perro ladra: ¡Guau, guau!");    
+				}
+		}
+class Gato : IAnimal{    
+		public void HacerSonido()    {        
+				Console.WriteLine("El gato maúlla: ¡Miau, miau!");    		
+				}
+		}
+class Program{    
+		static void Main()    {        
+				// Polimorfismo: Usamos la interfaz para tratar diferentes tipos de animales        
+				IAnimal[] animales = new IAnimal[]{            
+						new Perro(),            
+						new Gato()        
+						};
+        foreach (IAnimal animal in animales){            
+		        animal.HacerSonido(); 
+		        // Llamada polimórfica        
+		        }    
+		    }
+}
+```
 ### **¿Para qué sirve una una tabla de funciones virtuales**
 
-Creo que sirve para que cada objeto se ejecute con su propia función, así parezca que las funciones son del mismo tipo.
+Creo que sirve para que cada objeto se ejecute con su propia función, así parezca que las funciones son del mismo tipo. 
+
+**¿Cómo se logra esto? ¿Qué relación existe entre los métodos virtuales y el polimorfismo? Al llamar HacerSonido cómo sabe esta función sobre cuál objeto debe actuar?**
+
+1. La tabla de funciones virtuales funciona gracias al polimorfismo porque aunque los objetos (IAnimal, Particle*) se guarden como un mismo tipo, cada uno tiene una forma diferente de usar las funciones.
+
+2. La relación es que los métodos virtuales permiten el polimorfismo. Gracias al polimorfismo es que el programa puede decidir en el tiempo real de ejecución qué función es la que debe utilizar.
+
+3. La función HacerSonido sabe qué objeto utilizar porque cada objeto tiene su propia información interna (como la _vtable) que permite que el programa sepa qué función debe utilizar.
