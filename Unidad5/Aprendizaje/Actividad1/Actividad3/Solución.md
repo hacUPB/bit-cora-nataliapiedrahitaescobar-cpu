@@ -31,3 +31,9 @@ En una de las capturas, cuando solo se creó una sola partícula, el tamaño del
 
 ### **Métodos Virtuales**
 
+**CircularExplosion _vfptr:**
+![alt text](image-5.png)
+
+**¿Qué puedo observar?**
+
+Puedo observar que _vtable contiene las direcciones de memoria que representan a las funciones del objeto como update, draw, etc.
