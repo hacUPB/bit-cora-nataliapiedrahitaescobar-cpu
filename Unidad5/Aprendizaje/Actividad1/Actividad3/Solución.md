@@ -41,3 +41,16 @@ Puedo observar que _vtable contiene las direcciones de memoria que representan a
 **StarExplosion _vfptr:**
 ![alt text](image-6.png)
 ![alt text](image-7.png)
+
+**TABLA COMPARATIVA: ¿Qué puedes ver? ¿Qué puedes concluir? ¿Qué relación existe entre la tabla de funciones y los métodos virtuales?**
+
+1. Se puede ver que las tablas son parecidas, ya que tienen las mismas funciones como update, draw e isDead. Pero diferencian en que cada clase tiene su propia implementación de estas funciones. O sea que, la función draw va a ser diferente tanto en el CircleExplosion como en el StarExplosion y así sería lo mismo con las demás funciones que poseen.
+
+2. Se puede concluir que aunque las clases heredan de las misma base, cada una tiene una tabla de funciones diferentes, lo que permite que cada objeto ejecute sus propios métodos aunque se manejen con el mismo tipo Particle*.
+
+3. La relación de los _vtable con los métodos virtuales es que los _vtable existen gracias a los métodos virtuales. Es lo que permite que el programa sepa qué función utilizar dependiento del tipo de objeto.
+
+
+### **¿Para qué sirve una una tabla de funciones virtuales**
+
+Creo que sirve para que cada objeto se ejecute con su propia función, así parezca que las funciones son del mismo tipo.
