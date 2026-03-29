@@ -37,3 +37,7 @@ En una de las capturas, cuando solo se creó una sola partícula, el tamaño del
 **¿Qué puedo observar?**
 
 Puedo observar que _vtable contiene las direcciones de memoria que representan a las funciones del objeto como update, draw, etc.
+
+**StarExplosion _vfptr:**
+![alt text](image-6.png)
+![alt text](image-7.png)
