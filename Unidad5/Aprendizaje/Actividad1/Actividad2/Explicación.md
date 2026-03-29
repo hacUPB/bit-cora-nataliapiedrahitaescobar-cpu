@@ -32,3 +32,11 @@ También hay una forma de random explosion donde al explotar la partícula apare
 
 - StarExplosion: La partícula explota formando estrellas.
 ![alt text](image-6.png)
+
+### **ofApp.cpp**
+Es la parte del código donde se controla la creación, actualización, explosión y eliminación de todas las partículas.
+1. update(): Es donde se actualizan las partículas y se muestra si se están moviendo, envejeciendo o desvaneciendo.
+- En caso de que la partícula explote, esta parte del código elige el tipo de explosión y luego crea las diferentes partículas que aparecen después de esta.
+Las nuevas partículas que aparecen después de la explosión nacen en la misma posición de la explosión, con el mismo color y desaparecen al tiempo.
+2. Draw(): Es la parte del código que se encarga de dibujar las partículas en la pantalla (Círculos, cuadrados y estrellas).
+3. createRisingParticle(): Aquí es donde se crea la partícula inicial que sale de la parte inferior de la pantalla, crea los vectores de posición incial de las partículas, define la velocidad, el color y cuándo explota la partícula.
