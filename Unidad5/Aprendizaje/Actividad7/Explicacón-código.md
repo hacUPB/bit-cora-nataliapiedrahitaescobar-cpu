@@ -15,4 +15,6 @@ La herencia se utilizó cuando se crearon las clases FallingParticle, ZigZagPart
 
 El polimorfismo se utilizó al usar el particle*, que es donde se guardan los diferentes tipos de partículas. Aunque todas son tratadas como Particle, cada una ejecuta un draw() y update() diferentes.
 
-### **EVIDENCIAS** 
+### **Explica cómo verificaste que cada una de las extensiones funciona correctamente, muestra capturas de pantalla del depurador donde evidencias lo anterior, en particular el polimorfismo en tiempo de ejecución.**
+
+

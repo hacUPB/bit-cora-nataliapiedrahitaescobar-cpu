@@ -1,5 +1,5 @@
 //ofApp.h
-class ZigZagParticle : public Particle {
+class PulsingParticle : public Particle {
 protected:
 	glm::vec2 position;
 	glm::vec2 velocity;
@@ -8,7 +8,7 @@ protected:
 	float age;
 
 public:
-	ZigZagParticle(const glm::vec2 & pos, const glm::vec2 & vel, const ofColor & col, float life)
+	PulsingParticle(const glm::vec2 & pos, const glm::vec2 & vel, const ofColor & col, float life)
 		: position(pos)
 		, velocity(vel)
 		, color(col)
@@ -16,18 +16,14 @@ public:
 		, age(0) { }
 
 	void update(float dt) override {
-		age += dt;
-
-		// Movimiento base (sube)
 		position += velocity * dt;
-
-		// ZigZag FUERTE (horizontal)
-		position.x += sin(age * 10) * 100 * dt;
+		age += dt;
 	}
 
 	void draw() override {
+		float size = 5 + sin(age * 10) * 3; // tamaño cambia
 		ofSetColor(color);
-		ofDrawCircle(position, 6);
+		ofDrawCircle(position, size);
 	}
 
 	bool isDead() const override {
@@ -40,3 +36,4 @@ public:
 
 	glm::vec2 getPosition() const override { return position; }
 	ofColor getColor() const override { return color; }
+};
