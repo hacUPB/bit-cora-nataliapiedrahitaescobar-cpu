@@ -31,3 +31,6 @@ Tecla "N":
 ![alt text](image-4.png)
 
 ### **¿Qué crees que está pasando “detrás de cámaras” cuando presionas las teclas? Formula una hipótesis inicial sobre cómo la aplicación cambia el comportamiento de las partículas.**
+
+Creo que detrás de cámaras hay una parte del código que se encarga de indicarla a cada una de las partículas la acción que debe realizar según la tecla presionada o que esté en su estado natural si ninguna tecla está presionada. Esto debe suceder por medio de un tipo de polimorfismo que se puede observar en la tabla de valores, donde cada método utilizado al presionar cada tecla busca el lugar donde está guardado cada método para que las partículas reaccionen de la manera en que se pide.
+
