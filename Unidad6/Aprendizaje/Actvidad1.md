@@ -15,7 +15,7 @@ Las partículas tienen la misma forma circular pero cambian en su color que las 
 - Circular Azul: Son las partículas que tienen mayor tamaño, ya que son más grandes de las partículas rojas y verdes, hay como 10 partículas en total en toda la pantalla y se mueven a una velocidad lenta.
 - Circular verde: Son como la combinación de las partículas azules y rojas en tamaño, las partículas más grandes se mueven a una velocidad lenta mientras que las pequeñas van a una velocidad super rápida, además de que son las partículas que más rápido se expanden en la ventana.
 
-## **Toma algunas capturas de pantalla de la aplicación en diferentes momentos (estado inicial, después de presionar ‘a’, ‘r’, ‘s’, ‘n’) y añádelas a tu bitácora.**
+### **Toma algunas capturas de pantalla de la aplicación en diferentes momentos (estado inicial, después de presionar ‘a’, ‘r’, ‘s’, ‘n’) y añádelas a tu bitácora.**
 
 Tecla "A": 
 ![alt text](image.png)
@@ -29,3 +29,5 @@ Tecla "S":
 
 Tecla "N":
 ![alt text](image-4.png)
+
+### **¿Qué crees que está pasando “detrás de cámaras” cuando presionas las teclas? Formula una hipótesis inicial sobre cómo la aplicación cambia el comportamiento de las partículas.**
