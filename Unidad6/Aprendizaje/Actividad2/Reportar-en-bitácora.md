@@ -10,3 +10,4 @@ El patrón Observer sirve para que un objeto le avise a muchos otros cuando ocur
 
 ### **Dibuja un diagrama que muestre la relación entre Subject, Observer, ofApp y Particle en el caso de estudio, indicando quién es el Sujeto y quiénes los Observadores.**
 
+Ejemplo presionando la tecla "A"
