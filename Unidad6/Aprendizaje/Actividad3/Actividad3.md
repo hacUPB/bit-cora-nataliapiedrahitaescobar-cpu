@@ -69,3 +69,4 @@ El problema del tipo de partícula desconocido se puede arreglar validando el ti
 
 **Localiza ofApp::setup. ¿Cómo se utiliza la ParticleFactory para poblar el vector particles?**
 
+ 
