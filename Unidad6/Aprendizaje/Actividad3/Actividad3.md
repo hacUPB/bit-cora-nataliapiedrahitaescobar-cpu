@@ -41,3 +41,31 @@ Particle * ParticleFactory::createParticle(const std::string & type) {
 **3. ¿Qué tipo de objeto devuelve este método fábrica?**
 
 Devuelve un puntero tipo Particle que internamente estpa divido en tipo star, shooting star o planet, los cuales son todos tipo a Particle como base pero con diferentes características.
+
+### **Proceso de Creación**
+
+**Observa el método ParticleFactory::createParticle. ¿Cómo decide qué tipo de partícula específica crear y configurar?**
+
+Para saber cómo se decide qué tipo de partícula crear se basa en el type, si el tipo de partícula es una estralla (Star) lo que hace el método es darle a esa partícula el tamaño y el color que ya están implementados en el código y eso mismo hace con los tipos de partículas shooting star y planet.
+
+**¿Qué información necesita el método fábrica para realizar su trabajo?**
+
+Solo necesita el método type (string) con el cual decide qué características asignar a la partícula y  cómo configurarla.
+
+**¿Qué devuelve si se le pasa un tipo desconocido?*
+
+Si se pasa un tipo desconocido lo que hace el type es que manda una partícula por defecto sin ninguna configuración en especial.
+
+```
+Particle * particle = new Particle();
+return particle;
+```
+
+**¿Cómo podrías mejorar esto?**
+
+El problema del tipo de partícula desconocido se puede arreglar validando el tipo de partícula y devolviendo un null al final del código para que no se mande ninguna partícula.
+
+### **Uso de Factory**
+
+**Localiza ofApp::setup. ¿Cómo se utiliza la ParticleFactory para poblar el vector particles?**
+
