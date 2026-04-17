@@ -69,4 +69,10 @@ El problema del tipo de partícula desconocido se puede arreglar validando el ti
 
 **Localiza ofApp::setup. ¿Cómo se utiliza la ParticleFactory para poblar el vector particles?**
 
- 
+ En el método ofApp::setup, la clase ParticleFactory se utiliza para crear las partículas. En lugar de crear las partículas directamente, se llama al método createParticle con un tipo específico de partícula como star, shooting_star o planet.
+
+ Después de que cada partícula es creada se guarda en el vector Particles y estas se agregan como un observador por medio del addObserver, así,  ofApp no necesita saber cómo se crean las partículas por dentro, porque la fábrica se encarga de eso.
+
+ ### **Compara esto con la alternativa: ¿Cómo se vería ofApp::setup si no usara la fábrica y tuviera que crear y configurar cada tipo de partícula (star, shooting_star, planet) directamente usando new Particle() y luego ajustando sus propiedades (size, color, velocity)?**
+
+ Si no se usara la fábrica, el método ofApp::setup tendría que crear cada partícula manualmente con new Particle() y luego tendría que asignarles sus propiedades como el tamaño, color y velocidad de cada partícula que esté creando. Esto haría que el código fuera más largo, mientras que con el factory, toda la lógica del código se encuentra en una sola parte, lo que hace que sea más fácil de modificar.
