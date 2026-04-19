@@ -49,7 +49,7 @@ En NormalState, onEnter se usa para asignar una velocidad aleatoria a la partíc
 
 **3. ¿Qué evento externo (mediado por el patrón Observer, que ya analizaste) desencadena la llamada a setState en una Particle?** 
 
-
+El evento externo sucede cuando se presiona una tecla (a,r,s o n), que hace que ofApp envíe un mensaje a las partículas usando el patrón Observer. Cuando una partícula recibe el mensaje, llama al setState para cambiar su estado.
 
 
 
