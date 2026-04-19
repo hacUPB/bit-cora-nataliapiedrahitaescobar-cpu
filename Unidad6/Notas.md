@@ -5,3 +5,10 @@ El Factory Method es un método que se encarga de crear objetos y devolverlos ya
 ### **Instancia**
 
 Es un objeto creado a partir de una clase que sirve como molde.
+
+setState: Es el que cambia el estado de la partícula.
+
+onExit: Limpia o finaliza el estado anterior.
+
+onEnter: Prepara el nuevo estado.
+
