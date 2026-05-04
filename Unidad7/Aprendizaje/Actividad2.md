@@ -8,4 +8,6 @@ Luego está el GLFW que es el que ayuda a crear las ventana, manejar eventos y d
 
 Después se usa el GLAD, que es el que carga las funciones modernas del OpenGL para que sean disponibles en el código. Es como el puente entre el programa y la tarjeta gráfica.
 
-Los drivers de la GPU 
+Los drivers de la GPU son los que contienen la implementación del OpenGL moderno. O sea que, ahí es donde están las funciones que permiten usar los shaders, buffers y lo que se necesita para dibujar el triángulo. GLAD lo que hace es que busca esas funciones y las conecta al código para que funcionen.
+
+Ya al final, está GML que se utiliza para hacer operaciones matemáticas que son necesarias para generar gráficos más complejos.
