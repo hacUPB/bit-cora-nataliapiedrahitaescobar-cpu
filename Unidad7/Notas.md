@@ -8,7 +8,7 @@ Shaders: Son pequeños programas de instrucciones que se ejecutan en la GPU y le
 
 - Fragment Shader: Se encargan de decidir el color de cada pixel.
 
-Buffers: Son contenedores o arreglos de datos dentro del GPU donde se guardan datos.
+Buffers: Son contenedores o arreglos de datos dentro del GPU donde se guardan datos. Datos que se procesan.
 
 - Vertex Buffer: Guarda coordenadas.
 
