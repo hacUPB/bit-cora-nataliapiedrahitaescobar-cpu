@@ -14,4 +14,12 @@ Buffers: Son contenedores o arreglos de datos dentro del GPU donde se guardan da
 
 - Vetex Array: Cómo están configuardas las coordenadas, es la información/atributos que contiene cada vértice para poderse dibujar.
 
-- Frame buffer: Información de lo que se va a pintar en pantalla.
+- Frame buffer: Información de lo que se va a pintar en pantalla.Porción de memoria donde OpenGL dibuja los pixeles antes de enviarlos a la pantalla.
+
+Hilo: Flujo de instrucciones del programa 
+
+GLAD: Busca las funciones a utilizar en los drivers.
+
+- API: Interfaz de programación que permite el acceso a funciones. Conjunto de funciones que permite interactuar con el sistema.
+
+- La GPU es la que realmente dibuja, mientras que OpenGL es la API que le dice a la GPU qué y cómo dibujar.
