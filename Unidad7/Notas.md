@@ -23,3 +23,5 @@ GLAD: Busca las funciones a utilizar en los drivers.
 - API: Interfaz de programación que permite el acceso a funciones. Conjunto de funciones que permite interactuar con el sistema.
 
 - La GPU es la que realmente dibuja, mientras que OpenGL es la API que le dice a la GPU qué y cómo dibujar.
+
+- Viewport: Define que parte del framebuffer se usará para dibujar.
