@@ -24,5 +24,17 @@ El rol de la GPU es el de verdaderamente hacer el dibujo que se necesita, ejecut
 
 Los drivers son los que permiten la comunicación entre el OpenGL y la GPU, trabaja como un intermediario.
 
-### **¿Por qué crees que sea necesario activar el VSync? ¿Si no lo activas y la imagen es estática qué crees que pase, y si es dinámica?**
+### **7. ¿Por qué crees que sea necesario activar el VSync? ¿Si no lo activas y la imagen es estática qué crees que pase, y si es dinámica?**
 
+Es VSync se activa para que los frames se sincronicen con la pantalla para que la imagen no se vea cortada.
+
+- Si la imagen es estátican, no se nota mucho si el VSync está activado o no.
+- Si la imagen no es estática y no cuenta con el VSync activado, puede que aparezcan cortes o movimientos extraños en la imagen.
+
+### **8. ¿Qué es OpenGL Legacy? ¿Qué diferencias hay entre ambos?**
+
+OpenGL Legacy es la versión antigua de OpenGL que utilizaba funciones más simples pero menos eficientes.
+
+El OpenGL moderno usa los shaders, buffers y es más flexible pero más complejo de utilizar.
+
+### **9. ¿Qué es el shader program? ¿Por qué es importante en OpenGL moderno?**
