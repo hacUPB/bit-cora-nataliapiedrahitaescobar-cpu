@@ -38,3 +38,28 @@ OpenGL Legacy es la versión antigua de OpenGL que utilizaba funciones más simp
 El OpenGL moderno usa los shaders, buffers y es más flexible pero más complejo de utilizar.
 
 ### **9. ¿Qué es el shader program? ¿Por qué es importante en OpenGL moderno?**
+
+El shader program es el que define como se dibujan los objetos en la GPU.
+
+Es importante en el OpenGL moderno porque este depende de los shaders para poder renderizar las imágenes.
+
+### **10.  Trata de revisar el código setupTriangle(), intuitivamente ¿Qué crees que hace? ¿Qué crees que es el VAO y el VBO?**
+
+setupTriangle() en el código es el encargado de crear las coordenas de los 3 vértices que se necesitan para crear el triángulo. 
+
+- El VAO es el encargado de guardar los datos o coordenadas dadas de los vértices del triángulo.
+- El VBO organiza cómo se interpretan los datos del VAO.
+
+### **11. En el ciclo principal (game loop) de OpenGL, notaste que en cada frame (cuadro) le decimos a openGL que use el shader program y el VAO. Si le indicas esto antes del game loop ¿Será necesario seguirlo haciendo en cada loop? Si no es necesario ¿En qué casos crees que esto puede ser útil?**
+
+No siempre es necesario usar el shader program y el VAO en un loop si no cambian, ya que OpenGL mantiene los estados activos. Pero se suele hacer el loop porque cuando se trata de programas más complejos que cuentan con varios objetos o shaders se hacen varios cambios constantes. Gracias al loop es que se asegura que se esté usando la configuración correcta en cada frame.
+
+### **12.  Finalmente, recuerda lo que hace glfwSwapBuffers(mainWindow); ¿Por qué crees que es importante? ¿Qué pasaría si no lo llamas? ¿Cómo explicas lo que pasa si no lo llamas?**
+
+el glfwSwapBuffers(mainWindow) es importante porque es el que se encarga de mostrar lo que se dibujo en el framebuffer en pantalla.
+
+En el experimento se puede ver que si no se llama al glfwSwapBuffers, la imagen no se actualiza y se ve como si no hubiera nada en pantalla. Esto sucede cuando se usa el doblebuffer porque un buffer se encarga de dibujar y el otro se encarga de mostrar el dibujo en pantalla pero al no intercambiarse, los procesos u operaciones matemáticas que se utilizaron para realizar el dibujo no tienen en dónde mostrarse.
+
+**Experimento no llamar al glfwSwapBuffers**
+![alt text](image-17.png)
+

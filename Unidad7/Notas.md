@@ -27,3 +27,5 @@ GLAD: Busca las funciones a utilizar en los drivers.
 - Viewport: Define que parte del framebuffer se usará para dibujar.
 
 ![alt text](image.png)
+
+OPENGL GUARDA ESTADOS!
