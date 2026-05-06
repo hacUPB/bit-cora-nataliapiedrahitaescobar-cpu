@@ -25,3 +25,5 @@ GLAD: Busca las funciones a utilizar en los drivers.
 - La GPU es la que realmente dibuja, mientras que OpenGL es la API que le dice a la GPU qué y cómo dibujar.
 
 - Viewport: Define que parte del framebuffer se usará para dibujar.
+
+![alt text](image.png)
