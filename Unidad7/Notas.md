@@ -29,3 +29,5 @@ GLAD: Busca las funciones a utilizar en los drivers.
 ![alt text](image.png)
 
 OPENGL GUARDA ESTADOS!
+
+Objetos: Son entidades que representan recursos gráficos como texturas, buffers de vértices, shaders y otros elementos necesarios para renderizar gráficos en la GPU.
