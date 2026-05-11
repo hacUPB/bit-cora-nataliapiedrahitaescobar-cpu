@@ -63,3 +63,6 @@ La idea es que el sin genere coordenadas entre el -1 y 1, valores que luego son 
 
 ### **5. Reflexión: ¿Qué otros efectos visuales simples podrías lograr usando el tiempo como uniform?**
 
+Un efecto simple que se me ocurre que se puede hacer usando el tiempo como uniform sería el de mover el triángulo de un lado a otro utilizando sin(), o cambiar el tamaño del triángulo constantemente.
+
+
