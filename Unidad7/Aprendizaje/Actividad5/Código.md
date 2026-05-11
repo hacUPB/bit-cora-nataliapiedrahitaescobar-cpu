@@ -1,3 +1,6 @@
+### **1. Modifica el código del triángulo para que sea interactivo.**
+
+
 ```
 //Bibliotecas incluídas
 #include <iostream> //Permite imprimir mensajes en consola
@@ -122,6 +125,7 @@ void setupTriangle() {
 		3 * sizeof(float),
 		(void*)0
 	);
+	glEnableVertexAttribArray(0);
 	glBindVertexArray(0);
 }
 
