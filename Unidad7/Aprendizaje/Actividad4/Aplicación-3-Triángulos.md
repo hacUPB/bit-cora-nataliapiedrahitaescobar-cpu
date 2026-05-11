@@ -221,14 +221,23 @@ int main()
 
 	  //Shader A:
 		glUseProgram(shaderA);
+		glEnableVertexAttribArray(0);
+		glDisableVertexAttribArray(1);
+		glDisableVertexAttribArray(2);
 		glDrawArrays(GL_TRIANGLES, 0, 3);
 
 	  //Shader B:
 		glUseProgram(shaderB);
+		glDisableVertexAttribArray(0);
+		glEnableVertexAttribArray(1);
+		glDisableVertexAttribArray(2);
 		glDrawArrays(GL_TRIANGLES, 0, 3);
 
 		//Shader C:
 		glUseProgram(shaderC);
+		glDisableVertexAttribArray(0);
+		glDisableVertexAttribArray(1);
+		glEnableVertexAttribArray(2);
 		glDrawArrays(GL_TRIANGLES, 0, 3);
 		
 
@@ -247,7 +256,11 @@ int main()
 	glfwTerminate();
 	return 0;
 }
+
 ```
+
+
+
 
 
 
