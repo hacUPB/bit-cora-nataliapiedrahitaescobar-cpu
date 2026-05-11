@@ -6,7 +6,7 @@
 
 3. La función glfwGetTime() se envía al uniform del shader usando la función glUniform1f(timeLocation, timeValue); para que el triángulo pueda cambiar de color todo el tiempo cuando se ejecuta el programa.
 
-### **Pega el código modificado de tu fragment shader.**
+### **2. Pega el código modificado de tu fragment shader.**
 
 ```
 //Fragment Shader
@@ -49,4 +49,17 @@ if (!succes) {
 glUniform1f(timeLocation, timeValue);
 ```
 
-### **Explica cómo usaste la función de tiempo (sin, cos, u otra) para lograr el efecto de cambio de color cíclico. ¿Qué rango de valores produce tu cálculo y cómo afecta eso al color final?**
+### **3. Explica cómo usaste la función de tiempo (sin, cos, u otra) para lograr el efecto de cambio de color cíclico. ¿Qué rango de valores produce tu cálculo y cómo afecta eso al color final?**
+
+Para hacer los cambios de color del rojo, verde y azul se utilizó la función seno (sin()) junto con el tiempo en el fragmen shader.
+
+La idea es que el sin genere coordenadas entre el -1 y 1, valores que luego son normalizados, en los ejes "x" y "y", lo que hace que cambie la tonalidad de los colores en el triángulo.
+
+### **4. EVIDENCIAS DEL CÓDIGO**
+
+**Enlace:** https://youtu.be/RAmVGegF6qU 
+
+(El video también está incluído en la carpeta de aplicación por si no se ve en Youtube).
+
+### **5. Reflexión: ¿Qué otros efectos visuales simples podrías lograr usando el tiempo como uniform?**
+
