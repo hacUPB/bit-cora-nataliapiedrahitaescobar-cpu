@@ -259,3 +259,9 @@ int main()
 
 ### **EVIDENCIA**
  ![alt text](image.png)
+
+ **Conclusión:**
+
+ Al principio no aparecía el tercer triángulo porque los atributos de los shaders se activaban y desactivaban dinámicamente, pero al solucionar este problema ya si aparecieron los 3.
+
+ ![alt text](image-1.png)
