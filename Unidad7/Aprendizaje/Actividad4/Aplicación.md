@@ -4,14 +4,16 @@ Creo que con el ejercicio se crearán tres triángulos diferentes que van a tene
 
 ### **Nuevo código main()**
 ```
-#include <iostream>
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
+//Bibliotecas incluídas
+#include <iostream> //Permite imprimir mensajes en consola
+#include <glad/glad.h> //Carga las funciones modernas de OpenGL 
+#include <GLFW/glfw3.h> //Crea ventanas y maneja teclado, mouse y eventos
 
 
 // Callback: ajusta el viewport cuando cambie el tamaño de la ventana
+//Ayuda a saber a OpenGL que parte de la ventana se usa para dibujar.
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
-	glViewport(0, 0, width, height);
+	glViewport(0, 0, width, height); //Define el área visible.
 }
 
 // Procesa entrada simple: cierra con ESC
@@ -25,7 +27,9 @@ const unsigned int SCR_WIDTH = 400;
 const unsigned int SCR_HEIGHT = 400;
 
 // Fuentes de los shaders
-const char* vertexShaderA = R"glsl(
+//Posición desde el atributo 0
+//gl_position coloca el vértice directamente en pantalla
+const char* vertexShaderA = R"glsl( 
     #version 460 core
     layout(location = 0) in vec3 aPos; 
     void main() {
@@ -33,6 +37,7 @@ const char* vertexShaderA = R"glsl(
     }
 )glsl";
 
+//Colores desde el atributo 1, se usa el color como si fuera una posición
 const char* vertexShaderB = R"glsl(
 #version 460 core
 layout(location = 1) in vec3 aColor;
@@ -42,6 +47,8 @@ void main() {
 }
 )glsl";
 
+
+//Utiliza el offset como posiciones
 const char* vertexShaderC = R"glsl(
 #version 460 core
 layout(location = 2) in vec2 aOffset;
@@ -51,6 +58,8 @@ void main() {
 }
 )glsl";
 
+//Define el color final del pixel
+//En este caso se da el color naranja 
 const char* fragmentShaderSrc = R"glsl(
     #version 460 core
     out vec4 FragColor;
@@ -68,6 +77,8 @@ const char* fragmentShaderSrc = R"glsl(
 
 
 // IDs globales
+//VAO: Guarda configuración de atributos
+//VBO: Guarda datos de vértices
 unsigned int VAO, VBO;
 unsigned int shaderProg;
 unsigned int shaderA;
@@ -117,7 +128,7 @@ void setupTriangle() {
 	float vertices[] = {
 		//Posición, color y offset
 		-1.0f, -1.0f, 0.0f,  0.0f,0.0f,0.0f,  0.1f,0.5f,
-		 0.0f, -1.0f, 0.0f,  1.0f,0.0f,0.0f,  0.2f,0.5f,
+		 0.5f, -1.0f, 0.0f,  1.0f,0.0f,0.0f,  0.2f,0.5f,
 		-0.5f, -0.5f, 0.0f,  0.5f,0.5f,0.0f,  0.15f,0.75f,
 	};
 	glGenVertexArrays(1, &VAO);
@@ -208,44 +219,25 @@ int main()
 	   // 14 Activa el VAO
 		glBindVertexArray(VAO);
 
-	   // Shader A: Posición
+	  //Shader A:
 		glUseProgram(shaderA);
-		//Activa el atributo 0 (posición)
-		glEnableVertexAttribArray(0);
-		// Desactivar color y offset
-		glDisableVertexAttribArray(1);
-		glDisableVertexAttribArray(2);
-		// Dibuja
 		glDrawArrays(GL_TRIANGLES, 0, 3);
 
-		// Shader B: Color
-		//Usar el shaderB
+	  //Shader B:
 		glUseProgram(shaderB);
-		//Desactiva posición
-		glDisableVertexAttribArray(0);
-		//Activa solo el color
-		glDisableVertexAttribArray(1);
-		//Desactiva offset
-		glDisableVertexAttribArray(2);
-		//Dibuja
 		glDrawArrays(GL_TRIANGLES, 0, 3);
 
-		//Shader C: Offset
-		//Usa el shader C
+		//Shader C:
 		glUseProgram(shaderC);
-		//Desactiva posición y color
-		glDisableVertexAttribArray(0);
-		glDisableVertexAttribArray(1);
-		//Activa solo el Offset
-		glEnableVertexAttribArray(2);
-		//Dibuja
 		glDrawArrays(GL_TRIANGLES, 0, 3);
+		
 
-		// 16 Intercambia buffers y muestra el contenido, el  buffer trasero hace los cálculos para realizar el dibujo y el delantero muestra el dibujo realizado.
+
+		// 15 Intercambia buffers y muestra el contenido, el  buffer trasero hace los cálculos para realizar el dibujo y el delantero muestra el dibujo realizado.
 		glfwSwapBuffers(mainWindow);
 	}
 
-	// 17 Limpieza
+	// 16 Limpieza
 	glfwMakeContextCurrent(mainWindow);
 	glDeleteVertexArrays(1, &VAO);
 	glDeleteBuffers(1, &VBO);
@@ -256,6 +248,10 @@ int main()
 	return 0;
 }
 ```
+
+
+
+
 
 ### **EVIDENCIA**
  ![alt text](image.png)
