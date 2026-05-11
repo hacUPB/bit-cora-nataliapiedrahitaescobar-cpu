@@ -26,6 +26,8 @@ GLAD: Busca las funciones a utilizar en los drivers.
 
 - Viewport: Define que parte del framebuffer se usará para dibujar.
 
+- uniforms: Variables globales de solo lectura declaradas en los shaders que permiten pasar datos desde la CPU hasta la GPU.
+
 ![alt text](image.png)
 
 OPENGL GUARDA ESTADOS!
